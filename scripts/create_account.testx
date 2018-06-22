@@ -1,0 +1,30 @@
+- go to:
+    url: 'https://www.amazon.in/'
+
+- wait to appear:
+    el1: signText
+
+- set:
+    signText:
+
+- wait to appear:
+    el1: createAccountBtn
+
+- set:
+    createAccountBtn:
+
+- sleep:
+    seconds: '3'
+
+- wait to appear:
+    el1: yourName
+
+- set:
+    yourName: 'Sushil Sarin'
+    mobNumber: '9874533287'
+    emailAddress: '19jan86@gmail.com'
+    pwd: 'abc@1234'
+    continueBtn:
+
+- sleep:
+    seconds: '3'

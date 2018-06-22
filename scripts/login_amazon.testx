@@ -1,0 +1,28 @@
+- go to:
+    url: 'https://www.amazon.in/'
+
+- set:
+    helloText:
+
+- wait to appear:
+    el1: amazonEmail
+
+- set:
+    amazonEmail: 'anujvahil@gmail.com'
+    continueBtn:
+
+- wait to appear:
+    el1: amazonPwd
+
+- set:
+    amazonPwd: 'Passw0rd'
+    loginBtn:
+
+- sleep:
+    seconds: '5'
+
+- wait to appear:
+    el1: accountLink
+
+- sleep:
+    seconds: '5'

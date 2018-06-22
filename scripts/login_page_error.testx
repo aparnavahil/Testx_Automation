@@ -1,0 +1,71 @@
+- go to:
+    url: 'https://www.amazon.in/'
+
+- set:
+    helloText:
+
+- wait to appear:
+    el1: amazonEmail
+
+- set:
+    amazonEmail: 'anujvahil'
+    continueBtn:
+
+- wait to appear:
+    el1: errorMessage1
+
+- check matches:
+    errorMessage1: "We cannot find an account with that email address"
+
+- sleep:
+    seconds: '2'
+
+- set:
+    amazonEmail: ' '
+    continueBtn:
+
+- wait to appear:
+    el1: errorMessage2
+
+- check matches:
+    errorMessage2: "Enter your email or mobile phone number"
+
+- sleep:
+    seconds: '3'
+
+- set:
+    amazonEmail: 'anujvahil@gmail.com'
+    continueBtn:
+
+- wait to appear:
+    el1: amazonPwd
+
+- sleep:
+    seconds: '3'
+
+- set:
+    amazonPwd: 'Pass'
+    loginBtn:
+
+- wait to appear:
+    el1: errorMessage3
+
+- check matches:
+    errorMessage3: "Your password is incorrect"
+
+- sleep:
+    seconds: '5'
+
+- set:
+    amazonPwd: ''
+    loginBtn:
+
+- wait to appear:
+    el1: errorMessage4
+
+- check matches:
+    errorMessage4: "Enter your password"
+
+- set:
+    amazonPwd: 'Passw0rd'
+    loginBtn:
