@@ -1,0 +1,24 @@
+- go to:
+    url: 'https://observ.nu/opdrachten/'
+
+#- wait to appear:
+#    el1: log2Btn
+
+#- set:
+#    log2Btn:
+#    userLogBtn:
+
+- sleep:
+    seconds: '3'
+
+- set:
+    userEmail: '{{userEmail}}'
+    userPassword: '{{userPassword}}'
+    userLoginBtn:
+
+- wait to appear:
+    el1: loggedLink
+
+- set:
+    loggedLink:
+    userLogoutBtn:

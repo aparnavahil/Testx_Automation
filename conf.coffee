@@ -2,7 +2,7 @@ reporters = require 'testx-jasmine-reporters'
 
 exports.config =
   directConnect: true
-  specs: ['spec/*']
+  specs: ['spec/observ_loginandsearch.coffee']
 
   capabilities:
     browserName: 'chrome'
@@ -24,6 +24,8 @@ exports.config =
   onPrepare: ->
     require 'testx'
     testx.objects.add require './objects'
+    testx.objects.add require './objects/registeronobserv.coffee'
+    testx.objects.add require './objects/jobsearch.coffee'
     testx.objects.add require 'testx-standard-objects'
     testx.keywords.add(require './keywords')
 

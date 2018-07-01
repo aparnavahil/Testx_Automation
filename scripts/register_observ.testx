@@ -1,0 +1,33 @@
+- go to:
+    url: https://observ.nu/auth/realms/observ/protocol/openid-connect/registrations?client_id=webapp&response_mode=fragment&response_type=code&scope=openid&redirect_uri=/
+
+#- wait to appear:
+#    el1: log1Btn
+
+#- set:
+#    log1Btn:
+
+#- set:
+#    registrationBtn:
+
+- set:
+    firstnameText: 'ABC'
+    lastnameText: 'DEF'
+    emailText: 'anujvil@gmail.com'
+    phNumber: '9971899700'
+    linkedinUrl: 'linkedin.com/aparna'
+    findUs: 'linkedin'
+    roleinObserv: 'freelancer'
+    companyName: 'VAST'
+    observPwd: 'Pass'
+    confirmobservPwd: 'Pass'
+    registerOnObservBtn:
+
+- sleep:
+    seconds: '3'
+
+- wait to appear:
+    el1: acceptBtn
+
+- set:
+    acceptBtn:

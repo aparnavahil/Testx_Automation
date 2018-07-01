@@ -1,3 +1,3 @@
-describe 'Login in amazon.in', ->
-  it 'should open the homepage of the user', ->
-    testx.run 'scripts/login_amazon.testx'
+describe 'create account in amazon.in', ->
+  it 'should create a new account', ->
+    testx.run 'scripts/create_account.testx'

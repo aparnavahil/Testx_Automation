@@ -17,6 +17,6 @@
   },
   "testx": {
     "logScript": false,
-    "actionTimeout": 5000
+    "actionTimeout": 20000
   }
 }
